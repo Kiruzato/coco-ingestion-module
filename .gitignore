@@ -26,7 +26,6 @@ venv/
 venv311/
 ENV/
 .venv/
-INGESTION_MODULE
 INGESTION_MODULE/venv/
 
 # === Environment files (keep .env.example) ===
