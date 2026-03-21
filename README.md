@@ -14,6 +14,7 @@ The web application is maintained in a separate repository.
 * Windows 10 or later
 * Internet connection
 * OpenAI API Key
+* Documents in **PDF format only**
 
 ---
 
@@ -24,7 +25,7 @@ The web application is maintained in a separate repository.
 
 Example:
 
-```
+```text
 C:\Users\YourName\Desktop\coco-ingestion
 ```
 
@@ -71,20 +72,22 @@ Place all documents you want to ingest inside a dedicated folder.
 
 IMPORTANT:
 
-* Do NOT use your backup folder as the ingestion folder.
-* Always create a separate disposable folder for ingestion.
-* The ingestion process may modify or reorganize files.
-* Keep backup copies of your documents in another location.
+* **Use PDF files only**
+* Other file formats are not supported
+* Do NOT use your backup folder as the ingestion folder
+* Always create a separate disposable folder for ingestion
+* The ingestion process may modify or reorganize files
+* Keep backup copies of your documents in another location
 
 Example:
 
-```
+```text
 Documents (Backup)
    ├── original_files
 
 Documents_for_Ingestion (Disposable)
    ├── file1.pdf
-   ├── file2.docx
+   ├── file2.pdf
 ```
 
 ---
@@ -95,7 +98,7 @@ Documents_for_Ingestion (Disposable)
 
 2. Run the application:
 
-```
+```text
 INGESTION_MODULE\CoCo Ingestion Module.bat
 ```
 
@@ -103,7 +106,7 @@ The Ingestion Module application window will appear.
 
 3. Enter your OpenAI API Key and save.
 
-4. Select the folder containing the documents to ingest.
+4. Select the folder containing the **PDF documents** to ingest.
 
 5. Start the ingestion process and wait for completion.
 
@@ -128,7 +131,7 @@ This package is used by the CoCo Web App knowledge base.
 
 Upload the generated RAG package to the CoCo Web App.
 
-For detailed instructions, refer to the Instruction Manual.
+For how to upload the RAG package, refer to the Instruction Manual.
 
 ---
 
@@ -137,6 +140,7 @@ For detailed instructions, refer to the Instruction Manual.
 This repository includes:
 
 * document preprocessing pipeline
+* PDF text extraction
 * text chunking and normalization
 * embedding generation
 * vector database packaging
